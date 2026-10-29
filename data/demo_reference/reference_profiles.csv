@@ -1,0 +1,13 @@
+metric,mean,std,sample_count
+mean_voltage,14.18,0.06,30
+voltage_std,0.03,0.015,30
+mean_current,67.0,3.0,30
+current_std,20.0,2.5,30
+mean_ripple_mv,95.0,15.0,30
+ripple_std_mv,8.0,5.0,30
+vibration_mean,0.62,0.12,30
+vibration_peak,0.76,0.2,30
+vibration_std,0.07,0.05,30
+temp_rise_c,31.0,6.0,30
+temp_rise_per_min,6.2,1.2,30
+max_temp_c,57.0,7.0,30

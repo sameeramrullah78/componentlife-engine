@@ -1,0 +1,144 @@
+{
+  "engine_version": "0.1.0",
+  "source_file": "/mnt/data/componentlife-engine/data/demo_tests/healthy_alternator.csv",
+  "reference_file": "/mnt/data/componentlife-engine/data/demo_reference/reference_profiles.csv",
+  "features": {
+    "mean_voltage": 14.177430741155995,
+    "voltage_std": 0.02304058712919356,
+    "mean_current": 69.74975085868574,
+    "current_std": 19.06880916373972,
+    "mean_ripple_mv": 94.43900956672906,
+    "ripple_std_mv": 8.498167797258683,
+    "vibration_mean": 0.6020743972566653,
+    "vibration_peak": 0.7145065080001309,
+    "vibration_std": 0.04628438313734076,
+    "dominant_frequency_hz": 0.0033333333333333335,
+    "temp_start_c": 24.53969133234024,
+    "temp_end_c": 53.5012555520666,
+    "temp_rise_c": 28.961564219726363,
+    "temp_rise_per_min": 5.811685127704287,
+    "max_temp_c": 53.5012555520666,
+    "repeatability_score": 55.81252835004301,
+    "mean_rpm": 3260.0
+  },
+  "comparison": {
+    "mean_voltage": {
+      "value": 14.177430741155995,
+      "reference_mean": 14.18,
+      "reference_std": 0.06,
+      "z_score": -0.042820980733419375,
+      "reference_score": 99.14358038533162,
+      "sample_count": 30.0
+    },
+    "voltage_std": {
+      "value": 0.02304058712919356,
+      "reference_mean": 0.03,
+      "reference_std": 0.015,
+      "z_score": -0.46396085805376264,
+      "reference_score": 90.72078283892475,
+      "sample_count": 30.0
+    },
+    "mean_current": {
+      "value": 69.74975085868574,
+      "reference_mean": 67.0,
+      "reference_std": 3.0,
+      "z_score": 0.9165836195619145,
+      "reference_score": 81.66832760876171,
+      "sample_count": 30.0
+    },
+    "current_std": {
+      "value": 19.06880916373972,
+      "reference_mean": 20.0,
+      "reference_std": 2.5,
+      "z_score": -0.37247633450411255,
+      "reference_score": 92.55047330991775,
+      "sample_count": 30.0
+    },
+    "mean_ripple_mv": {
+      "value": 94.43900956672906,
+      "reference_mean": 95.0,
+      "reference_std": 15.0,
+      "z_score": -0.03739936221806298,
+      "reference_score": 99.25201275563875,
+      "sample_count": 30.0
+    },
+    "ripple_std_mv": {
+      "value": 8.498167797258683,
+      "reference_mean": 8.0,
+      "reference_std": 5.0,
+      "z_score": 0.09963355945173653,
+      "reference_score": 98.00732881096528,
+      "sample_count": 30.0
+    },
+    "vibration_mean": {
+      "value": 0.6020743972566653,
+      "reference_mean": 0.62,
+      "reference_std": 0.12,
+      "z_score": -0.14938002286112215,
+      "reference_score": 97.01239954277756,
+      "sample_count": 30.0
+    },
+    "vibration_peak": {
+      "value": 0.7145065080001309,
+      "reference_mean": 0.76,
+      "reference_std": 0.2,
+      "z_score": -0.22746745999934537,
+      "reference_score": 95.4506508000131,
+      "sample_count": 30.0
+    },
+    "vibration_std": {
+      "value": 0.04628438313734076,
+      "reference_mean": 0.07,
+      "reference_std": 0.05,
+      "z_score": -0.4743123372531849,
+      "reference_score": 90.5137532549363,
+      "sample_count": 30.0
+    },
+    "temp_rise_c": {
+      "value": 28.961564219726363,
+      "reference_mean": 31.0,
+      "reference_std": 6.0,
+      "z_score": -0.33973929671227293,
+      "reference_score": 93.20521406575455,
+      "sample_count": 30.0
+    },
+    "temp_rise_per_min": {
+      "value": 5.811685127704287,
+      "reference_mean": 6.2,
+      "reference_std": 1.2,
+      "z_score": -0.3235957269130944,
+      "reference_score": 93.52808546173812,
+      "sample_count": 30.0
+    },
+    "max_temp_c": {
+      "value": 53.5012555520666,
+      "reference_mean": 57.0,
+      "reference_std": 7.0,
+      "z_score": -0.49982063541905675,
+      "reference_score": 90.00358729161887,
+      "sample_count": 30.0
+    }
+  },
+  "anomalies": [],
+  "fingerprint": {
+    "electrical_output": 90.41,
+    "electrical_stability": 91.64,
+    "ripple_behaviour": 98.63,
+    "mechanical_condition": 94.33,
+    "thermal_behaviour": 92.25,
+    "repeatability": 55.81
+  },
+  "confidence": {
+    "score": 82.65,
+    "label": "HIGH",
+    "data_quality": 100.0,
+    "repeatability": 55.81,
+    "reference_coverage": 79.41,
+    "signal_agreement": 94.23
+  },
+  "classification": {
+    "category": "SUITABLE_PROFILE",
+    "reason": "No material deviation was detected in the supported demo dimensions."
+  },
+  "disclaimer": "Proof-of-concept output only. Synthetic/illustrative reference data. Not a certification, safety decision, or remaining-life guarantee."
+}

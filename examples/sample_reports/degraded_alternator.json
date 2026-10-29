@@ -1,0 +1,193 @@
+{
+  "engine_version": "0.1.0",
+  "source_file": "/mnt/data/componentlife-engine/data/demo_tests/degraded_alternator.csv",
+  "reference_file": "/mnt/data/componentlife-engine/data/demo_reference/reference_profiles.csv",
+  "features": {
+    "mean_voltage": 14.117592223441001,
+    "voltage_std": 0.04573015530673868,
+    "mean_current": 68.48291657765941,
+    "current_std": 18.974134596549536,
+    "mean_ripple_mv": 145.284017552991,
+    "ripple_std_mv": 18.179695487306137,
+    "vibration_mean": 0.9835250221943223,
+    "vibration_peak": 1.6872830795946177,
+    "vibration_std": 0.3849427306441233,
+    "dominant_frequency_hz": 0.0033333333333333335,
+    "temp_start_c": 24.99260114870792,
+    "temp_end_c": 74.2360408695633,
+    "temp_rise_c": 49.24343972085538,
+    "temp_rise_per_min": 9.881626699837199,
+    "max_temp_c": 74.2360408695633,
+    "repeatability_score": 20.317400908037115,
+    "mean_rpm": 3260.0
+  },
+  "comparison": {
+    "mean_voltage": {
+      "value": 14.117592223441001,
+      "reference_mean": 14.18,
+      "reference_std": 0.06,
+      "z_score": -1.040129609316646,
+      "reference_score": 79.19740781366707,
+      "sample_count": 30.0
+    },
+    "voltage_std": {
+      "value": 0.04573015530673868,
+      "reference_mean": 0.03,
+      "reference_std": 0.015,
+      "z_score": 1.0486770204492453,
+      "reference_score": 79.0264595910151,
+      "sample_count": 30.0
+    },
+    "mean_current": {
+      "value": 68.48291657765941,
+      "reference_mean": 67.0,
+      "reference_std": 3.0,
+      "z_score": 0.49430552588646987,
+      "reference_score": 90.11388948227061,
+      "sample_count": 30.0
+    },
+    "current_std": {
+      "value": 18.974134596549536,
+      "reference_mean": 20.0,
+      "reference_std": 2.5,
+      "z_score": -0.4103461613801855,
+      "reference_score": 91.79307677239629,
+      "sample_count": 30.0
+    },
+    "mean_ripple_mv": {
+      "value": 145.284017552991,
+      "reference_mean": 95.0,
+      "reference_std": 15.0,
+      "z_score": 3.352267836866067,
+      "reference_score": 32.95464326267866,
+      "sample_count": 30.0
+    },
+    "ripple_std_mv": {
+      "value": 18.179695487306137,
+      "reference_mean": 8.0,
+      "reference_std": 5.0,
+      "z_score": 2.0359390974612275,
+      "reference_score": 59.28121805077545,
+      "sample_count": 30.0
+    },
+    "vibration_mean": {
+      "value": 0.9835250221943223,
+      "reference_mean": 0.62,
+      "reference_std": 0.12,
+      "z_score": 3.0293751849526855,
+      "reference_score": 39.41249630094629,
+      "sample_count": 30.0
+    },
+    "vibration_peak": {
+      "value": 1.6872830795946177,
+      "reference_mean": 0.76,
+      "reference_std": 0.2,
+      "z_score": 4.636415397973088,
+      "reference_score": 7.271692040538241,
+      "sample_count": 30.0
+    },
+    "vibration_std": {
+      "value": 0.3849427306441233,
+      "reference_mean": 0.07,
+      "reference_std": 0.05,
+      "z_score": 6.298854612882466,
+      "reference_score": 0.0,
+      "sample_count": 30.0
+    },
+    "temp_rise_c": {
+      "value": 49.24343972085538,
+      "reference_mean": 31.0,
+      "reference_std": 6.0,
+      "z_score": 3.0405732868092294,
+      "reference_score": 39.18853426381541,
+      "sample_count": 30.0
+    },
+    "temp_rise_per_min": {
+      "value": 9.881626699837199,
+      "reference_mean": 6.2,
+      "reference_std": 1.2,
+      "z_score": 3.0680222498643324,
+      "reference_score": 38.63955500271335,
+      "sample_count": 30.0
+    },
+    "max_temp_c": {
+      "value": 74.2360408695633,
+      "reference_mean": 57.0,
+      "reference_std": 7.0,
+      "z_score": 2.4622915527947566,
+      "reference_score": 50.75416894410487,
+      "sample_count": 30.0
+    }
+  },
+  "anomalies": [
+    {
+      "metric": "vibration_std",
+      "value": 0.3849427306441233,
+      "z_score": 6.298854612882466,
+      "severity": "critical"
+    },
+    {
+      "metric": "vibration_peak",
+      "value": 1.6872830795946177,
+      "z_score": 4.636415397973088,
+      "severity": "critical"
+    },
+    {
+      "metric": "mean_ripple_mv",
+      "value": 145.284017552991,
+      "z_score": 3.352267836866067,
+      "severity": "critical"
+    },
+    {
+      "metric": "temp_rise_per_min",
+      "value": 9.881626699837199,
+      "z_score": 3.0680222498643324,
+      "severity": "critical"
+    },
+    {
+      "metric": "temp_rise_c",
+      "value": 49.24343972085538,
+      "z_score": 3.0405732868092294,
+      "severity": "critical"
+    },
+    {
+      "metric": "vibration_mean",
+      "value": 0.9835250221943223,
+      "z_score": 3.0293751849526855,
+      "severity": "critical"
+    },
+    {
+      "metric": "max_temp_c",
+      "value": 74.2360408695633,
+      "z_score": 2.4622915527947566,
+      "severity": "warning"
+    },
+    {
+      "metric": "ripple_std_mv",
+      "value": 18.179695487306137,
+      "z_score": 2.0359390974612275,
+      "severity": "warning"
+    }
+  ],
+  "fingerprint": {
+    "electrical_output": 84.66,
+    "electrical_stability": 85.41,
+    "ripple_behaviour": 46.12,
+    "mechanical_condition": 15.56,
+    "thermal_behaviour": 42.86,
+    "repeatability": 20.32
+  },
+  "confidence": {
+    "score": 64.22,
+    "label": "MODERATE",
+    "data_quality": 100.0,
+    "repeatability": 20.32,
+    "reference_coverage": 79.41,
+    "signal_agreement": 46.44
+  },
+  "classification": {
+    "category": "FURTHER_TESTING_REQUIRED",
+    "reason": "One or more diagnostic dimensions show a substantial deviation from the demo reference population."
+  },
+  "disclaimer": "Proof-of-concept output only. Synthetic/illustrative reference data. Not a certification, safety decision, or remaining-life guarantee."
+}
